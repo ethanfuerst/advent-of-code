@@ -1,3 +1,5 @@
+# https://adventofcode.com/2015/day/1
+
 with open('2015/inputs/day_1.txt', 'r') as file:
     data = file.read()
 

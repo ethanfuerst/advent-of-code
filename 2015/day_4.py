@@ -1,3 +1,5 @@
+# https://adventofcode.com/2015/day/4
+
 import hashlib
 
 i = 'yzbqklnj'

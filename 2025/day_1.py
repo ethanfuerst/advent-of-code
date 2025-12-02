@@ -24,11 +24,6 @@ for i in data:
 
 print(f'first answer is: {final_count}')
 
-def abs(i):
-    if i < 0:
-        return i * -1
-    return i
-
 dial_point = 50
 final_count = 0
 for i in data:

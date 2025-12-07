@@ -22,3 +22,29 @@ for num, op in enumerate(operations):
         sub_total = mult
     total += sub_total
 print(total)
+
+nums = []
+for i in data[:-1]:
+    nums.append([k for k in i])
+
+total = 0
+ops_count = len(operations) - 1
+str_list = []
+for i in range(len(nums[0]) - 1, -2, -1):
+    str_ = ''
+    for k in range(len(nums)):
+        str_ += nums[k][i]
+    if str_ == ' ' * len(nums) or i == -1:
+        if operations[ops_count] == '+':
+            total += sum(str_list)
+        else:
+            mult = 1
+            for j in str_list:
+                mult *= j
+            total += mult
+        ops_count -= 1
+        str_list = []
+    else:
+        str_list.append(int(str_))
+
+print(total)
